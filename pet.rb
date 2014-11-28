@@ -1,16 +1,11 @@
-# Ranger Rick
+Ranger Rick
 # Pseudocode
-# 
 
 class Person
-  #
-  # collection of rewards
-  # gets.chomp to receive commands
-  # commands for the racoon
-  # - feed
-  # - tell raccoon to sleep
-  # - give trophy
-  # - play catch/fetch
+  # include Controller
+  # def rewards; end  - @rewards  
+  # def commands; end # => for the racoon
+  
 end
 
 class Raccoon
@@ -23,9 +18,23 @@ class Raccoon
   # sleep
   # level up
   # play (catch)
+  # attr :hunger_status, :play_status, :sleep_status, :energy_level, 
+  
 end
 
 class Trophy
+  
+  def initialize(trophy_name)
+    @trophy = trophy_name
+  end
   # name
+end
+
+module Controller
+# gets.chomp to receive commands - 
+# # - feed
+  # - tell raccoon to sleep
+  # - give trophy
+  # - play catch/fetch
 end
 

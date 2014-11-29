@@ -23,7 +23,7 @@ class Raccoon
   def eat(input)
     if input == "fish"
       @hunger += 2
-      p "Thanks for the fish dawg"
+      p "Thanks for the fish, dude."
     elsif input == "kibble" or input == "crickets"
       @hunger += 1
       p "WHAT DO YOU THINK I AM? THAT'S NASTY"
@@ -79,7 +79,7 @@ class Raccoon
   end
 
   def wait
-    puts "okay, i'll go chill in my boss pokemon room"
+    puts "Okay, I'll go chill in my boss Pokemon room"
     T.passage_of_time
   end
 

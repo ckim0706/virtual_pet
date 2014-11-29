@@ -2,7 +2,7 @@ require_relative 'racoon'
 
 class Person
   def initialize(person_name)
-    @trophy = []
+    # @trophy = []
     @person_name = person_name
   end
 
@@ -40,6 +40,13 @@ module Controller
 
   def welcome
     puts "Welcome to Virtual Pet App!"
+    puts "
+                        ,,,
+                     .'    `/\_/\\
+                   .'       <@I@>
+        <((((((((((  )____(  \\./
+                   \( \(   \(\\(
+                   `-\"`-\"  \" \""
     puts "What is your name?"
     create_person_name(user_input)
     puts "____________________________"
@@ -108,7 +115,7 @@ module Controller
       @raccoon.sleep_cycle
     end
     sleep(sleep_counter)
-    puts "IMMMM ALLIVEEEE"
+    puts "I'M ALIIIIIIVE'
   end
 
   def wake_up_pet

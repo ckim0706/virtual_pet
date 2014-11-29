@@ -60,7 +60,7 @@ class Raccoon
         @hunger -= 1
         level_up
         @play_status += 1
-        return puts "#{@name} caught the frisbee!. He acts hungrier."
+        return puts "#{@name} caught the frisbee! He acts hungrier."
       elsif activity == "run"
         @hunger -= 1
         level_up
@@ -79,7 +79,7 @@ class Raccoon
   end
 
   def wait
-    puts "Okay, I'll go chill in my boss Pokemon room"
+    puts "Okay, I'll go chill in my boss Pokemon room."
     T.passage_of_time
   end
 

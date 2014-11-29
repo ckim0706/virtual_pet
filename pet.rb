@@ -33,9 +33,16 @@ class Person
 
 end
 
+class Trophy
+  def initialize(trophy_name)
+    @trophy = trophy_name
+  end
+end
+
 module Controller
+
   extend self
-# gets.chomp to receive commands -
+  
   @global_time = 0
 
   def welcome
@@ -115,11 +122,11 @@ module Controller
       @raccoon.sleep_cycle
     end
     sleep(sleep_counter)
-    puts "I'M ALIIIIIIVE'
+    puts "I'M ALIIIIIIVE"
   end
 
   def wake_up_pet
-    puts "WHO DARE DISTURBS ME FROM MY SLUMBER"
+    puts "WHO DARES DISTURB ME FROM MY SLUMBER"
     @raccoon.wake_up
     puts "____________________________"
     command_activities
@@ -161,15 +168,10 @@ end
 
 T = Controller
 
-class Trophy
-  def initialize(trophy_name)
-    @trophy = trophy_name
-  end
-end
+
 
 
 #---DT---
-
 # jack = Person.new
 # jack.command_feed("fish")
 # jack.command_play("run")
@@ -182,15 +184,11 @@ end
 # jack.command_get_stats
 # jack.command_give_trophy("rookie trophy")
 # puts ""
-
 # p T.passage_of_time
 # p T.passage_of_time
-
 # p jack.raccoon.sleep_cycle
-
-T.welcome
 # T.print_activities
 # T.command_activities
 # T.sleep_method
-
+T.welcome
 
